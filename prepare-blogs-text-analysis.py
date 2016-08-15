@@ -1,5 +1,5 @@
 #==============================================================================
-# prepare-blogs-text-analysis.py
+# prepare-blogs-text-age-gender.py
 # Purpose: Download and parse blog posts to train graph labs model to run
 # text analysis. 
 # some sections called as functions, some are command line driven
