@@ -1,5 +1,5 @@
 #==============================================================================
-# text-recombination.R
+# text-recombination-R2Python.R
 # Purpose: Merge all the text for each user into one large post and export to 
 # folder of xml files for processing with text based machine learning using Graph Labs in Python
 # some sections called as functions, some are command line driven
