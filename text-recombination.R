@@ -1,7 +1,7 @@
 #==============================================================================
 # text-recombination.R
 # Purpose: Merge all the text for each user into one large post and export to 
-# folder of xml files for processing with text based machine learning in Python
+# folder of txt files for processing with text based machine learning using Graph Labs in Python
 # some sections called as functions, some are command line driven
 # Author: David Harrison
 #==============================================================================
