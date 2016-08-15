@@ -8,8 +8,8 @@
 # Author: David Harrison
 #==============================================================================
 
-#Needs different form of OAuth access than other programs with stored file
-#Consumer key and consumer secret are the same as with twitter-setup
+#Needs different form of OAuth access than other programs with stored token
+#Consumer key and consumer secret are the same as with twitter-setup.R
 requestURL <- "https://api.twitter.com/oauth/request_token"
 accessURL <- "https://api.twitter.com/oauth/access_token"
 authURL <- "http://api.twitter.com/oauth/authorize"
@@ -147,30 +147,28 @@ write.csv(Followerstack, file=paste("follower", '_stack.csv'), row.names=F)
 #Will skip users who do not have any tweets
 
 for (i in 31001:length(Followerstack$description)){
-  
   #checks if close to rate limit and gives indicators for where in the list it is running
-   if (i%%100 == 0){
-      print(i)
-      rate <- getCurRateLimitInfo()
-      t <- as.numeric(rate[39,3])
-        if (t<45){
-          print(Sys.time())
-          for (i in 1:25){
-            rate2 <- getCurRateLimitInfo()
-            z <- as.numeric(rate2[39,3])
-            if (z == 180){
-              print("go go go")
-              break
-            }else{
-              Sys.sleep(30)
-              next
-            } 
+    if (i%%100 == 0){
+        print(i)
+        rate <- getCurRateLimitInfo()
+        t <- as.numeric(rate[39,3])
+          if (t<45){
+            print(Sys.time())
+            for (i in 1:25){
+              rate2 <- getCurRateLimitInfo()
+              z <- as.numeric(rate2[39,3])
+              if (z == 180){
+                print("go")
+                break
+                }else{
+                Sys.sleep(30)
+                next
+              } 
+            }
           }
-        }
-    }
-  
-#Grabs User Timeline of last 200 tweets and checks for errors
-#Removes extraneous details for each set of 200 tweets so it doesn't overburden the data frame
+      }
+    #Grabs User Timeline of last 200 tweets and checks for errors
+    #Removes extraneous details for each set of 200 tweets so it doesn't overburden the data frame
     tweets <- try(userTimeline(Followerstack[i,11], n=200, includeRts=TRUE, excludeReplies=FALSE), silent = TRUE)
     if(inherits(tweets, 'try-error')){
       next
@@ -194,7 +192,6 @@ for (i in 31001:length(Followerstack$description)){
       
       next
     }
-  
 }
 
 print("done")
