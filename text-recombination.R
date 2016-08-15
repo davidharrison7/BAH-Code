@@ -1,7 +1,7 @@
 #==============================================================================
 # text-recombination.R
 # Purpose: Merge all the text for each user into one large post and export to 
-# folder of txt files for processing with text based machine learning using Graph Labs in Python
+# folder of xml files for processing with text based machine learning using Graph Labs in Python
 # some sections called as functions, some are command line driven
 # Author: David Harrison
 #==============================================================================
@@ -43,5 +43,5 @@ realstack2$fulltext <- paste(realstack2$text,realstack2$ realstack2$text.1 ,real
 #Set working directory to new folder for all files
   
 for (i in 1:34646){
-  write.table(textstack[i,1], file=paste(i, ".txt", sep=""))
+  write.table(textstack[i,1], file=paste(i, ".xml", sep=""))
 }
