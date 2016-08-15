@@ -1,5 +1,5 @@
 #==============================================================================
-# age-gender-classifiers.py
+# age-gender-by-text-classifiers.py
 # Purpose: load sframes and trained model and run classifiers for text based age and gender
 # Author: David Harrison
 #==============================================================================
