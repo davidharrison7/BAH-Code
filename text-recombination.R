@@ -43,5 +43,5 @@ realstack2$fulltext <- paste(realstack2$text,realstack2$ realstack2$text.1 ,real
 #Set working directory to new folder for all files
   
 for (i in 1:34646){
-  write.table(textstack[i,1], file=paste(i, ".xml", sep=""))
+  write.table(textstack[i,1], file=paste(i, ".txt", sep=""))
 }
