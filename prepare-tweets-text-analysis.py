@@ -1,5 +1,5 @@
 #==============================================================================
-# prepare-tweets-GL.py
+# prepare-tweets-text-analysis.py
 # Purpose: Funtions similarly to prepare blogs, but does not create as many features
 # Parses and joins each users collective posts into separate files and saves the SFrame
 # to be reloaded
