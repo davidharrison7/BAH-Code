@@ -3,7 +3,7 @@
 # Purpose: Download and parse blog posts to train graph labs model to run
 # text analysis. 
 # some sections called as functions, some are command line driven
-# Author: David Harrison
+# Author: znation, adapated to use in project
 #==============================================================================
 '''Preprocesses text using NLTK and creates word features using Genism's word2vec model.
    Will also need to download Graph Lab by Turi in order to use this tool-kit. Uses
