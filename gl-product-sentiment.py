@@ -1,5 +1,5 @@
 #==============================================================================
-# GL-prodict-sentiment.py
+# gl-prodict-sentiment.py
 # Purpose: read in csv of reviews and use pretrained Graph Lab model to run product sentiment
 # returns a summary of all words input, can also return most negative or positive as well as 
 # some sections called as functions, some are command line driven
