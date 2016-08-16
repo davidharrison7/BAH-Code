@@ -1,5 +1,5 @@
 #==============================================================================
-# get-names-database.py
+# USSSAloader.py
 # Purpose: Download 90,000 names from USSA names database file
 # extracts and sorts zip file of male and female names
 # Author: sholiday, adapated 
