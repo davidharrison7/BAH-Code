@@ -1,5 +1,5 @@
 #==============================================================================
-# NB-Tweets.R
+# nb-tweets.R
 # Purpose: Get New Balance Tweets
 # Function can be used with other companies and search terms as well
 # Author: David Harrison
