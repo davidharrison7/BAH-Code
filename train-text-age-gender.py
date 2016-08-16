@@ -1,8 +1,8 @@
 #==============================================================================
-# train-text-GL.py
+# train-text-age-gender.py
 # Purpose: Uses blog posts to train word2vec model from set of blogs
 # some sections called as functions, some are command line driven
-# Author: znation, adapted for project
+# Author: znation
 #==============================================================================
 #creates TrainSentences class that takes series of text files as input from directory
 #returns iterator that is used to split sentences into list of words
